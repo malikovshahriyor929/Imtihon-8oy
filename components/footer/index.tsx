@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -5,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-100 text-gray-600 py-8 pt-6 px-4  ">
       <div className="container2 ">
         <div className=" hidden max-[950px]:block py-4">
-          <img
+          <Image
             src="/logo.png"
             alt="Shop.co Logo"
             width={100}
@@ -17,7 +18,7 @@ const Footer = () => {
             wear. From women to men.
           </p>
           <div className="flex space-x-4 mt-4">
-            <img
+            <Image
               src="/social.png"
               alt="Social Media Icons"
               width={100}
@@ -27,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-5 gap-8 pb-4 max-[950px]:grid-cols-4 max-[600px]:grid-cols-2">
           <div className="mx-auto max-[950px]:hidden">
-            <img
+            <Image
               src="/logo.png"
               alt="Shop.co Logo"
               width={100}
@@ -39,7 +40,7 @@ const Footer = () => {
               to wear. From women to men.
             </p>
             <div className="flex space-x-4 mt-4">
-              <img
+              <Image
                 src="/social.png"
                 alt="Social Media Icons"
                 width={100}
@@ -92,10 +93,11 @@ const Footer = () => {
           <p className="text-xs mt-4">
             Shop.co © 2000-2025. All Rights Reserved
           </p>
-          <div className="mt-4">
-            <img
+          <div className="mt-4 relative">
+            <Image
               src="/payment.png"
               alt="Payment Methods"
+              fill
               className="w-full h-auto"
             />
           </div>

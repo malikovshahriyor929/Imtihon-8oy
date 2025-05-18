@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 const Showcase = () => {
   return (
@@ -83,10 +84,11 @@ const Showcase = () => {
 
         {/* Right Image Placeholder */}
         <div className="md:w-1/2 mt- md:mt-0 flex items-center justify-center">
-            <img
-              src="./showcase.jpg"
+            <Image
+              src="/showcase.jpg"
               alt="Fashion showcase"
-              className="object-contain min-h-[550px]   "
+              fill
+              className="object-contain !static !min-h-[550px]   "
             />
         </div>
       </div>

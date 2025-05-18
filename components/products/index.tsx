@@ -3,6 +3,7 @@
 import { ProductType } from "@/types";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Products = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
@@ -31,12 +32,12 @@ const Products = () => {
             onClick={() => router.push(`/about/${product.id}`)}
             className="rounded-lg"
           >
-            <img
+            <Image
               src={product.img}
               alt={product.name}
               width={200}
               height={200}
-              className="w-full h-[300px] mb-4 rounded-lg"
+              className="w-full !static h-[300px] mb-4 rounded-lg"
             />
             <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
             <div className="flex items-center mb-2">

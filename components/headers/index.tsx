@@ -17,6 +17,7 @@ import {
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
+import Image from "next/image";
 
 const Header = () => {
   const { items } = useSelector((state: RootState) => state.cart);
@@ -30,8 +31,8 @@ const Header = () => {
 
           <SheetContent side="left" className="w-[230px]">
             <SheetHeader>
-              <SheetTitle>
-                <img src="./logo.png" alt="Logo" className="h-4" />
+              <SheetTitle className="relative ">
+                <Image src="./logo.png" alt="Logo" fill className="h-4" />
               </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col p-4 gap-4  ">
@@ -51,8 +52,13 @@ const Header = () => {
           </SheetContent>
         </Sheet>
 
-        <Link href={"/"}>
-          <img src="./logo.png" alt="logo" className="max-[500px]:h-4" />
+        <Link href={"/"} className="relative ">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            fill
+            className="!static !h-6 max-[500px]:h-4 "
+          />
         </Link>
       </div>
 

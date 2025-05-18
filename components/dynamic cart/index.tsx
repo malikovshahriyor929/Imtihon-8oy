@@ -132,6 +132,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { ProductType } from "@/types";
 import { Star } from "lucide-react";
+import Image from "next/image";
 
 const ProductPage = ({ id }: { id: string }) => {
   const [product, setProduct] = useState<ProductType>();
@@ -179,21 +180,21 @@ const ProductPage = ({ id }: { id: string }) => {
         <div className="">
           {product?.img && (
             <div className="flex gap-4 flex-col">
-              <img
+              <Image
                 src={product?.img}
                 alt="T-shirt top left"
                 width={150}
                 height={150}
                 className=" object-contain border rounded-lg"
               />
-              <img
+              <Image
                 src={product?.img}
                 alt="T-shirt bottom right"
                 width={150}
                 height={150}
                 className=" object-contain border rounded-lg"
               />
-              <img
+              <Image
                 src={product?.img}
                 alt="T-shirt bottom right"
                 width={150}
@@ -205,7 +206,7 @@ const ProductPage = ({ id }: { id: string }) => {
         </div>
         <div className="p-4 rounded-lg">
           {product?.img && (
-            <img
+            <Image
               src={product?.img}
               alt="T-shirt preview"
               width={500}

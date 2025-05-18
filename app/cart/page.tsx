@@ -12,6 +12,7 @@ import {
 } from "@/store/cartSlice";
 import { RootState } from "@/store/store";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Cart() {
   const [promo, setPromo] = useState("");
@@ -119,10 +120,11 @@ export default function Cart() {
               className="flex items-center gap-4 border-b pb-4 max-[530px]:flex-col max-[530px]:items-start"
             >
               <div className="flex items-center gap-4 w-1/2 max-[530px]:w-full ">
-                <img
+                <Image
                   src={item.img}
                   alt={item.name}
-                  className="w-28 h-28 rounded bg-gray-100 object-cover"
+                  fill
+                  className="!w-28 !h-28 rounded bg-gray-100 object-cover"
                 />
                 <div className="flex-1 max-w-[300px] w-full">
                   <h2 className="text-lg font-semibold max-[305px]:text-[16px] ">

@@ -1,6 +1,6 @@
 'use client';
-
 import { ProductType } from "@/types";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Products2 = () => {
@@ -28,12 +28,12 @@ const Products2 = () => {
             key={product.id}
             className="rounded-lg"
           >
-            <img
+            <Image
               src={product.img}
               alt={product.name}
               width={200}
               height={200}
-              className="w-full h-[300px] mb-4 rounded-lg"
+              className="!w-full !h-[300px] !static mb-4 rounded-lg"
             />
             <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
             <div className="flex items-center mb-2">
