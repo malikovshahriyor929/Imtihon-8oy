@@ -230,7 +230,7 @@ const ProductPage = ({ id }: { id: string }) => {
           </div>
           <div className="flex items-center gap-4 text-2xl">
             <span className="font-semibold">${product?.currentPrice}</span>
-            {product!?.discount > 0 && (
+            {/* {product?.discount! > 0 && (
               <>
                 <span className="line-through text-gray-400">
                   ${product?.price}
@@ -239,7 +239,7 @@ const ProductPage = ({ id }: { id: string }) => {
                   -{product?.discount && product?.discount}%
                 </span>
               </>
-            )}
+            )} */}
           </div>
           <p className="text-gray-600 max-w-md">
             This graphic t-shirt is perfect for any occasion. Crafted from a
