@@ -10,7 +10,7 @@ interface PageProps {
   };
 }
 
-export default function Page({ params }: PageProps) {
+const Page = ({ params }: PageProps) => {
   return (
     <>
       <ProductPage id={params.id} />
@@ -18,4 +18,5 @@ export default function Page({ params }: PageProps) {
       <Products2 />
     </>
   );
-}
+};
+export default Page;
