@@ -23,7 +23,7 @@ const Products2 = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">TOP SELLING</h1>
       
       <div className="grid grid-cols-4 gap-6 max-[1150px]:grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1">
-        {products.map((product) => (
+        {products?.map((product) => (
           <div
             key={product.id}
             className="rounded-lg"

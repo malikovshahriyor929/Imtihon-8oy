@@ -26,7 +26,7 @@ const Products = () => {
       </h1>
 
       <div className="grid grid-cols-4 gap-6 max-[1150px]:grid-cols-3 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1">
-        {products.map((product) => (
+        {products?.map((product) => (
           <div
             key={product.id}
             onClick={() => router.push(`/about/${product.id}`)}
