@@ -83,7 +83,7 @@ const Showcase = () => {
         </div>
 
         {/* Right Image Placeholder */}
-        <div className="md:w-1/2 mt- md:mt-0 flex items-center justify-center">
+        <div className="md:w-1/2 overflow-hidden mt- md:mt-0 flex items-center justify-center">
             <Image
               src="/showcase.jpg"
               alt="Fashion showcase"
