@@ -1,9 +1,13 @@
 import Posts from "@/components/customers";
 import ProductPage from "@/components/dynamic cart";
 import Products2 from "@/components/products2";
-type params = { params: Promise<{ id: string }> };
-const CardPage = async ({ params }: params) => {
-  const { id } = await params;
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+const CardPage = ({ params }: PageProps) => {
+  const { id } = params;
   return (
     <>
       <ProductPage id={id} />
