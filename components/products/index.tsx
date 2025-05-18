@@ -1,6 +1,6 @@
 "use client";
 
-import { ProductType } from "@/types";
+import { ProductType } from "@/type";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";

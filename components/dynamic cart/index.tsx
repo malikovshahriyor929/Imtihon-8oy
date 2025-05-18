@@ -130,7 +130,7 @@ import { addToCart } from "@/store/cartSlice";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { ProductType } from "@/types";
+import { ProductType } from "@/type";
 import { Star } from "lucide-react";
 import Image from "next/image";
 
