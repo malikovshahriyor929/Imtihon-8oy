@@ -1,20 +1,17 @@
 import Posts from "@/components/customers";
 import ProductPage from "@/components/dynamic cart";
 import Products2 from "@/components/products2";
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-const CardPage = ({ params }: PageProps) => {
-  const { id } = params;
+
+type Props = {
+  params: { id: string };
+};
+
+export default function Page({ params }: Props) {
   return (
     <>
-      <ProductPage id={id} />
+      <ProductPage id={params.id} />
       <Posts />
       <Products2 />
     </>
   );
-};
-
-export default CardPage;
+}
