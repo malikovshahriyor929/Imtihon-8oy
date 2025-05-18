@@ -1,5 +1,4 @@
-// app/about/[id]/page.tsx
-
+"use client"
 import Posts from "@/components/customers";
 import ProductPage from "@/components/dynamic cart";
 import Products2 from "@/components/products2";
